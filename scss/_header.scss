@@ -1,0 +1,29 @@
+.header {
+  &-titre{
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+
+    &__logo{
+      height: 6vh;
+      padding-right: 10px;
+    }
+
+    &__text{
+      line-height: 6vh;
+    }
+  }
+
+  &-sociaux{
+    text-align: right;
+    &__logo{
+      height: 5vh;
+    }
+  }
+
+  &-text{
+    color:grey;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
