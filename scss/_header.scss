@@ -1,6 +1,7 @@
 .header {
 
   grid-column: span 2;
+
   /*
   Titre du menu
    */
@@ -42,5 +43,10 @@
     color:grey;
     padding: 5px;
     margin-bottom: 10px;
+  }
+}
+@media screen  and (min-width: 360px){
+  .header{
+    grid-column: span 3;
   }
 }
