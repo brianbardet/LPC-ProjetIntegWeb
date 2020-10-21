@@ -2,6 +2,7 @@
 
   grid-column: span 2;
   margin: 10px;
+
   /*
   Titre du menu
    */
@@ -41,5 +42,13 @@
       padding: 5px;
     }
 
+  }
+}
+/*
+  Taille S
+*/
+@media screen  and (min-width: 360px){
+  .navigation{
+    grid-column: span 1;
   }
 }

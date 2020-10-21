@@ -1,6 +1,7 @@
 .header {
 
   grid-column: span 2;
+
   /*
   Titre du menu
    */
@@ -45,12 +46,20 @@
   }
 }
 
+/*
+Taille s
+ */
+@media screen  and (min-width: 360px){
+  .header{
+    grid-column: span 3;
+  }
+}
 
 /*
 Taille m
  */
-@media screen and (min-width: 600px){
-  .header{
+@media screen and (min-width: 600px) {
+  .header {
     grid-column: span 4;
   }
 }
