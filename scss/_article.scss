@@ -17,19 +17,22 @@
     font-weight: bold;
     text-transform: capitalize;
     text-shadow:0 0 3px #000000;
-    font-size: 2vh;
+    font-size: 1.5vh;
   }
 
   &-image {
     width: 100%;
     position: relative;
-    top: -2vh;
+    top: -1.5vh;
   }
 
   &-titre {
-    font-size: 4vw;
+    font-size: 1.5em;
     color:darkorange;
     font-weight: bold;
+    @media screen and (min-width: 850px){
+      font-size: 2em;
+    }
   }
 
   &-separation {
@@ -53,4 +56,3 @@
     padding: 10px;
   }
 }
-

@@ -10,9 +10,14 @@
     flex-direction: row;
     padding: 5px;
 
-    /*
-    Logo dans le titre du menu
-     */
+    @media screen  and (min-width: 450px) {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+
+      /*
+      Logo dans le titre du menu
+       */
     &__logo{
       height: 6vh;
       padding-right: 10px;
@@ -31,6 +36,10 @@
    */
   &-sociaux{
     text-align: right;
+    @media screen  and (min-width: 450px) {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
     &__logo{
       height: 5vh;
     }
@@ -39,19 +48,25 @@
   /*
   Paragraphe du header
    */
-  &-text{
-    color:grey;
+  &-text {
+    color: grey;
     padding: 5px;
     margin-bottom: 10px;
+    @media screen and (min-width: 450px) {
+      grid-column: span 3;
+      grid-row: 2/3;
+    }
   }
 }
 
 /*
 Taille s
  */
-@media screen  and (min-width: 360px){
+@media screen  and (min-width: 450px){
   .header{
     grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
   }
 }
 
@@ -69,5 +84,14 @@ Taille m
 @media screen  and (min-width: 850px){
   .header{
     grid-column: span 5;
+  }
+}
+
+/*
+  Taille l
+*/
+@media screen  and (min-width: 1300px){
+  .header{
+    grid-column: span 6;
   }
 }
