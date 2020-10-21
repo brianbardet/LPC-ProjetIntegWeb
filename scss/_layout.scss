@@ -45,7 +45,7 @@ h6 {
 }
 
 /*
-  Taille S
+  Taille s
 */
 @media screen  and (min-width: 360px){
   .container{
@@ -60,5 +60,14 @@ Taille m
 @media screen and (min-width: 600px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*
+  Taille l
+*/
+@media screen  and (min-width: 850px){
+  .container{
+    grid-template-columns: repeat(5,1fr);
   }
 }
