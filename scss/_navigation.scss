@@ -1,29 +1,44 @@
-.header {
+.navigation{
+
+  margin: 10px;
+  /*
+  Titre du menu
+   */
   &-titre{
-    display:flex;
-    flex-direction: row;
-    padding: 5px;
-
-    &__logo{
-      height: 6vh;
-      padding-right: 10px;
-    }
-
-    &__text{
-      line-height: 6vh;
-    }
+    font-weight: bold;
+    color: orange;
   }
 
-  &-sociaux{
-    text-align: right;
-    &__logo{
-      height: 5vh;
-    }
-  }
+  /*
+  Liste du menu
+   */
+  &-list{
 
-  &-text{
-    color:grey;
-    padding: 5px;
-    margin-bottom: 10px;
+    /*
+    Element de la liste
+     */
+    & > li{
+
+      margin: 5px;
+      color: orange;
+
+      /*
+      Icon de la liste
+       */
+      & > i {
+        padding-left: 8px;
+        padding-right:5px;
+      }
+
+    }
+
+    /*
+    Sous liste du menu
+     */
+    &__souslist > li{
+      margin-left: 33px;
+      padding: 5px;
+    }
+
   }
 }

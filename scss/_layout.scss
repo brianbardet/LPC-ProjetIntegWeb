@@ -6,8 +6,11 @@ body {
 
 article, header {
   padding: 5px;
-  border: 1px solid black;
-  box-shadow: 0 0 2em grey;
+  box-shadow: 0 0 1em grey;
+}
+
+nav {
+  padding: 5px;
 }
 
 h1 {

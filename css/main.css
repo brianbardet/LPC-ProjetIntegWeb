@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -51,8 +52,11 @@ body {
 
 article, header {
   padding: 5px;
-  border: 1px solid black;
-  box-shadow: 0 0 2em grey;
+  box-shadow: 0 0 1em grey;
+}
+
+nav {
+  padding: 5px;
 }
 
 h1 {
@@ -80,10 +84,27 @@ h6 {
   font-size: 1em;
 }
 
+.header {
+  /*
+  Titre du menu
+   */
+  /*
+  Image des réseaux sociaux dans le header
+   */
+  /*
+  Paragraphe du header
+   */
+}
 .header-titre {
   display: flex;
   flex-direction: row;
   padding: 5px;
+  /*
+  Logo dans le titre du menu
+   */
+  /*
+  Texte du titre du menu
+   */
 }
 .header-titre__logo {
   height: 6vh;
@@ -102,6 +123,111 @@ h6 {
   color: grey;
   padding: 5px;
   margin-bottom: 10px;
+}
+
+.navigation {
+  margin: 10px;
+  /*
+  Titre du menu
+   */
+  /*
+  Liste du menu
+   */
+}
+.navigation-titre {
+  font-weight: bold;
+  color: orange;
+}
+.navigation-list {
+  /*
+  Element de la liste
+   */
+  /*
+  Sous liste du menu
+   */
+}
+.navigation-list > li {
+  margin: 5px;
+  color: orange;
+  /*
+  Icon de la liste
+   */
+}
+.navigation-list > li > i {
+  padding-left: 8px;
+  padding-right: 5px;
+}
+.navigation-list__souslist > li {
+  margin-left: 33px;
+  padding: 5px;
+}
+
+.article {
+  margin-bottom: 10px;
+}
+.article-etiquette {
+  z-index: 10;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-shadow: 0 0 3px #000000;
+  font-size: 2vh;
+}
+.article-image {
+  width: 100%;
+  position: relative;
+  top: -2vh;
+}
+.article-titre {
+  font-size: 4vw;
+  color: darkorange;
+  font-weight: bold;
+}
+.article-separation {
+  margin-right: 80%;
+  height: 5px;
+  background-color: black;
+}
+.article-icon {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+}
+.article-icon > label:first-child {
+  text-decoration: underline;
+}
+.article-texte {
+  padding: 10px;
+}
+
+.sectionGrille {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.sectionGrille-one {
+  grid-column: 1/2;
+  grid-row: 1/1;
+}
+.sectionGrille-two {
+  grid-column: 2/3;
+  grid-row: 1/1;
+}
+.sectionGrille-three {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.footer {
+  padding: 20px;
+}
+.footer-btn {
+  float: right;
+  border-radius: 10px;
+  background-color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
