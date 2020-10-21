@@ -45,8 +45,21 @@
     margin-bottom: 10px;
   }
 }
+
+/*
+Taille s
+ */
 @media screen  and (min-width: 360px){
   .header{
     grid-column: span 3;
+  }
+}
+
+/*
+Taille m
+ */
+@media screen and (min-width: 600px) {
+  .header {
+    grid-column: span 4;
   }
 }
