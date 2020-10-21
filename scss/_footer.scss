@@ -1,0 +1,70 @@
+.article {
+
+  margin-bottom: 10px;
+
+  &-etiquette {
+    z-index: 10;
+    position:relative;
+    top: 5px;
+    left: 5px;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow:0 0 3px #000000;
+    font-size: 3vw;
+  }
+
+  &-image {
+    width: 100%;
+    position: relative;
+    top: -15px;
+  }
+
+  &-titre {
+    font-size: 4vw;
+    color:darkorange;
+    font-weight: bold;
+  }
+
+  &-separation {
+    margin-right: 80%;
+    height: 5px;
+    background-color: black;
+  }
+
+  &-icon {
+    display:flex;
+    flex-direction: column;
+    font-style: italic;
+
+    & > label:first-child{
+      text-decoration: underline;
+    }
+
+  }
+
+  &-texte {
+    padding: 10px;
+  }
+}
+
+.sectionGrille {
+  display:grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2,1fr);
+
+  &-one {
+    grid-column: 1/2;
+    grid-row: 1/1;
+  }
+
+  &-two {
+    grid-column: 2/3;
+    grid-row: 1/1;
+  }
+
+  &-three {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}

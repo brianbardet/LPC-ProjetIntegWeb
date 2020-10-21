@@ -1,0 +1,44 @@
+.header {
+  /*
+  Titre du menu
+   */
+  &-titre{
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+
+    /*
+    Logo dans le titre du menu
+     */
+    &__logo{
+      height: 6vh;
+      padding-right: 10px;
+    }
+
+    /*
+    Texte du titre du menu
+     */
+    &__text{
+      line-height: 6vh;
+    }
+  }
+
+  /*
+  Image des réseaux sociaux dans le header
+   */
+  &-sociaux{
+    text-align: right;
+    &__logo{
+      height: 5vh;
+    }
+  }
+
+  /*
+  Paragraphe du header
+   */
+  &-text{
+    color:grey;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
