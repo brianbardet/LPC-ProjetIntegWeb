@@ -84,7 +84,14 @@ h6 {
   font-size: 1em;
 }
 
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .header {
+  grid-column: span 2;
   /*
   Titre du menu
    */
@@ -126,6 +133,7 @@ h6 {
 }
 
 .navigation {
+  grid-column: span 2;
   margin: 10px;
   /*
   Titre du menu
@@ -163,7 +171,12 @@ h6 {
 }
 
 .article {
+  grid-column: span 2;
+  grid-row: span 1;
   margin-bottom: 10px;
+}
+.article__taille1 {
+  grid-column: span 1;
 }
 .article-etiquette {
   z-index: 10;
@@ -201,24 +214,6 @@ h6 {
 }
 .article-texte {
   padding: 10px;
-}
-
-.sectionGrille {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(2, 1fr);
-}
-.sectionGrille-one {
-  grid-column: 1/2;
-  grid-row: 1/1;
-}
-.sectionGrille-two {
-  grid-column: 2/3;
-  grid-row: 1/1;
-}
-.sectionGrille-three {
-  grid-column: 1/2;
-  grid-row: 2/3;
 }
 
 .footer {

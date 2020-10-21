@@ -1,6 +1,12 @@
 .article {
 
+  grid-column: span 2;
+  grid-row: span 1;
   margin-bottom: 10px;
+
+  &__taille1{
+    grid-column: span 1;
+  }
 
   &-etiquette {
     z-index: 10;
@@ -48,23 +54,3 @@
   }
 }
 
-.sectionGrille {
-  display:grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(2,1fr);
-
-  &-one {
-    grid-column: 1/2;
-    grid-row: 1/1;
-  }
-
-  &-two {
-    grid-column: 2/3;
-    grid-row: 1/1;
-  }
-
-  &-three {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-}
