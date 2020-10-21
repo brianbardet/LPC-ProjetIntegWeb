@@ -43,3 +43,13 @@ h6 {
   grid-gap: 10px;
   grid-template-columns: repeat(2,1fr);
 }
+
+/*
+Taille m
+ */
+@media screen and (min-width: 600px){
+  .container{
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(4,1fr);
+  }
+}
